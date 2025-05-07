@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-            steps {
+            steps{
                 script {
                     docker.build("flask-app:${env.BUILD_ID}")
                 }
